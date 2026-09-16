@@ -1,0 +1,24 @@
+[2026-09-16T19:44:58Z] === ENRICH ITERATION 1 START | repo=listr2/listr2 sha=51524728 ===
+[2026-09-16T19:44:58Z] [iter=1] PHASE START: enrich repo=listr2/listr2 sha=51524728 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/51524728-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/51524728c0754fbe133ea7453baad473b2695302.nq.gz
+[2026-09-16T19:45:30Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=83 MB
+[2026-09-16T19:45:33Z] [iter=1] AST store loaded triples=346603 load_secs=3 mem_mb=570 MB
+[2026-09-16T19:45:33Z] [iter=1] Step 2: Finding LSP targets mem_mb=570 MB
+[2026-09-16T19:45:34Z] [iter=1] LSP targets found call_sites=2476 imports=0 extends=31 implements=6 secs=1
+[2026-09-16T19:45:34Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=570 MB
+[2026-09-16T19:45:36Z] [iter=1] Position index built positions=22927 nodes_with_types=26411 secs=2 mem_mb=570 MB
+[2026-09-16T19:45:36Z] [iter=1] Step 3: Starting LSP resolution mem_mb=570 MB already_completed_types=[] already_completed_files=0
+[2026-09-16T19:45:36Z] [iter=1] Resolving target type target_type=call_site count=2476
+[2026-09-16T19:45:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.7 files_done=0 resolved=0 errors=0 current=src/utils/logger/logger.ts
+[2026-09-16T19:46:08Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.2 files_done=7 resolved=48 errors=199 current=tests/error-collection.e2e-spec.ts
+[2026-09-16T19:46:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.7 files_done=21 resolved=76 errors=417 current=src/renderer/simple/renderer.ts
+[2026-09-16T19:47:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.2 files_done=41 resolved=93 errors=616 current=src/utils/process-output/process-output.ts
+[2026-09-16T19:47:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.8 files_done=69 resolved=114 errors=840 current=src/utils/process-output/process-output-buffer.ts
+[2026-09-16T19:48:17Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=3.3 files_done=108 resolved=155 errors=1024 current=examples/docs/task/subtasks/access-parent-task.ts
+[2026-09-16T19:48:29Z] [iter=1] Target type resolved target_type=call_site resolved=162 errors=1072 secs=174 mem_mb=570 MB
+[2026-09-16T19:48:29Z] [iter=1] Resolving target type target_type=extends_clause count=31
+[2026-09-16T19:48:32Z] [iter=1] Target type resolved target_type=extends_clause resolved=31 errors=0 secs=3 mem_mb=570 MB
+[2026-09-16T19:48:32Z] [iter=1] Resolving target type target_type=implements_clause count=6
+[2026-09-16T19:48:34Z] [iter=1] Target type resolved target_type=implements_clause resolved=6 errors=0 secs=2 mem_mb=570 MB
+[2026-09-16T19:48:39Z] [iter=1] Step 5: Writing final enrichment file triples=23067
+[2026-09-16T19:48:40Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/51524728c0754fbe133ea7453baad473b2695302.nq.gz size_kb=453
+[2026-09-16T19:48:40Z] [iter=1] PHASE END: enrich elapsed_s=222 elapsed_min=3.7 total_triples=23067
